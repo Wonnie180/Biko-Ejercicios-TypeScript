@@ -12,7 +12,7 @@ let aNumber: number = 3;
 
 // Modifica el código bajo esta línea
 
-aNumber = '5';
+aNumber = 5;
 
 // Modifica el código sobre esta línea
 

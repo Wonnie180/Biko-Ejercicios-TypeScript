@@ -15,10 +15,13 @@
 interface Personajes {
   elBueno: string;
   elFeo: string;
+  elMalo: string;
 }
 
 const personajes: Personajes = {
-  elBueno: 'Rubio',
+  elBueno: "Rubio",
+  elFeo: "Sentencia",
+  elMalo: "Tuco",
 };
 
 // Modifica el código sobre esta línea

@@ -17,10 +17,34 @@ enum Personaje {
 
 // Modifica el código bajo esta línea
 
-function getName(personaje: Personaje): string {
-  if (personaje === Personaje.Bueno) {
-    return 'Rubio';
+function getName(personaje: Personaje) : string {
+  let nombre: string;
+
+  switch (personaje) {
+    case Personaje.Bueno:
+      nombre = "Rubio";
+      break;
+    case Personaje.Malo:
+      nombre = "Sentencia";
+      break;
+    case Personaje.Feo:
+      nombre = "Tuco";
+      break;
+    default:
+      nombre = "";
+      break;
   }
+
+  return nombre;
+
+  // if (personaje === Personaje.Bueno) {
+  //   return "Rubio";
+  // } else if (personaje === Personaje.Malo) {
+  //   return "Sentencia";
+  // } else if (personaje === Personaje.Feo) {
+  //   return "Tuco";
+  // }
+  // return "";
 }
 
 // Modifica el código sobre esta línea

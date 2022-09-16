@@ -12,10 +12,10 @@
 
 // Modifica el código a partir de esta línea
 
-let aTextOrNumber: number = 5;
+let aTextOrNumber: number | string = 5;
 
 // Modifica el código sobre esta línea
 
 console.log(aTextOrNumber);
-aTextOrNumber = 'a text';
+aTextOrNumber = "a text";
 console.log(aTextOrNumber);

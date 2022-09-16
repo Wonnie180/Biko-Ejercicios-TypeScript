@@ -22,11 +22,11 @@ class Person {
   }
 }
 
-const maialen = new Person('Maialen');
+const maialen = new Person("Maialen");
 
 // Modifica el código bajo esta línea
 
-console.log(`Hola, ${maialen.name}!`);
+console.log(`Hola, ${maialen.getName()}!`);
 
 // Modifica el código sobre esta línea
 

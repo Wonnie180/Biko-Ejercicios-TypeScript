@@ -10,14 +10,24 @@
 
 // Modifica el código bajo esta línea
 
-type PersonajesLiterales = 
+type PersonajesLiterales = "bueno" | "malo" | "feo";
 
-function getName(personaje: PersonajesLiterales) {
-
+function getName(personaje: PersonajesLiterales) : string{
+  let nombre: string = "";
+  if (personaje === "bueno") {
+    nombre = "Rubio";
+  } else if (personaje === "malo") {
+    nombre = "Sentencia";
+  } else if (personaje === "feo") {
+    nombre = "Tuco";
+  }
+  return nombre;
 }
 
 // Modifica el código sobre esta línea
 
 console.log(
-    `Al bueno lo llamaban ${getName('bueno')}, al malo ${getName('malo')} y, al feo, ${getName('feo')}`
-  );
+  `Al bueno lo llamaban ${getName("bueno")}, al malo ${getName(
+    "malo"
+  )} y, al feo, ${getName("feo")}`
+);

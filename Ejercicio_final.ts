@@ -4,14 +4,20 @@
     todo lo que quieras sobre este lenguaje de programación
 */
 
-class Pokemon {
-  constructor(nombre, numero, ataques) {
-    this.nombre = nombre;
-    this.numero = numero;
-    this.ataques = ataques;
-  }
+interface iPokemon {
+  nombre: string;
+  numero: number;
+  ataques: string[];
+}
 
-  ataque(numero) {
+class Pokemon implements iPokemon {
+  constructor(
+    public nombre: string,
+    public numero: number,
+    public ataques: string[]
+  ) {}
+
+  ataque(numero: number) {
     if (this.ataques.length >= numero && 0 < numero) {
       console.log(
         this.nombre + " utiliza el ataque " + this.ataques[numero - 1]

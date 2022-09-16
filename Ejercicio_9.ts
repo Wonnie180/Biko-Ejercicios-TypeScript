@@ -28,7 +28,7 @@ const personaje: Personaje = {
 };
 
 // Modifica el código bajo esta línea
-const getName = (animal?: Animal) => animal.name;
+const getName = (animal?: Animal) => animal?.name;
 
 // Modifica el código sobre esta línea
 

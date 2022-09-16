@@ -16,22 +16,41 @@ interface Animal {
 // Modifica el código bajo esta línea
 
 class Cat implements Animal {
-  constructor(private name) {}
+  name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
 
   getNoise() {
-    return 4;
+    return "miau";
+  }
+
+  getName() {
+    return this.name;
   }
 }
 
-class Dog implements Animal {}
+class Dog implements Animal {
+  name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  getNoise() {
+    return "guau";
+  }
+
+  getName() {
+    return this.name;
+  }
+}
 
 // Modifica el código sobre esta línea
 
-const gato = new Cat('Periko');
-const perro = new Dog('Felipe');
+const gato = new Cat("Periko");
+const perro = new Dog("Felipe");
 
 console.log(
-  `Mi gato ${gato.name} hace ${gato.getNoise()}, mi perro ${
-    perro.name
-  } hace ${perro.getNoise()}`
+  `Mi gato ${gato.getName()} hace ${gato.getNoise()}, mi perro ${perro.getName()} hace ${perro.getNoise()}`
 );
